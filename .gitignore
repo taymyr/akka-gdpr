@@ -1,0 +1,6 @@
+.idea/
+
+target/
+
+gdpr-test.jceks
+gdpr-test.pcks12

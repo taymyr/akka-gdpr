@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+option java_package = "org.taymyr.akka.persistence.gdpr.serialization";
+option java_outer_classname = "GDPR";
+option optimize_for = SPEED;
+
+message WithDataSubjectId {
+  required string dataSubjectId = 1;
+  optional bytes payload = 2;
+  optional int32 serializerId = 3;
+  optional string manifest = 4;
+}
